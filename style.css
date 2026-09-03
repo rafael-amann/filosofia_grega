@@ -1,0 +1,97 @@
+
+.pagina {
+    background-color: #f9f0dd;
+    width: 800px;
+    min-height: 1000px;
+    margin: 68px auto;
+    padding: 1px 50px 50px 50px;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border: 2px solid #8a6d3b;
+    border-radius: 15px;
+}
+
+body {
+    background-color: #e6d7bf;
+    background-image: url("grecia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.conteudo {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.conteudo p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.conteudo h2 {
+    text-align: left;
+}
+
+.conteudo h1 {
+    font-size: 60px;
+    font-family: Garamond;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo h1::before,
+.conteudo h1::after {
+    content: "";
+    height: 4px;
+    background-color: #8a6d3b;
+    flex: 1;
+}
+
+.conteudo h2::before {
+    content: "🌿";
+    color: #8a6d3b;
+}
+
+nav {
+    background-color: rgba(249, 240, 221, 0.95);
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #8a6d3b;
+}
+
+nav a {
+    display: inline-block;
+    color: #5c4828;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-family: Garamond;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #e6d7bf;
+    color: #3f2e17;
+    transform: translateY(-2px);
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+header {
+    position: fixed;
+    top: 4px;
+    left: 2%;
+    width: 96%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
