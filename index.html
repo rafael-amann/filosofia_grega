@@ -15,7 +15,26 @@
 
 <body id="topo">
 
+
+
+<aside class="sidebar" id="sidebar">
+
+    
+
+    <h2>Menu</h2>
+
+    <a href="#">Início</a>
+    <a href="#">Filosofia Grega</a>
+    <a href="#">Sócrates</a>
+    <a href="#">Platão</a>
+    <a href="#">Aristóteles</a>
+    <a href="#">Contato</a>
+
+</aside>
+
 <header>
+
+    <button class="menu-btn">☰</button>
 
     <nav>
         <a href="#topo">Início</a>
@@ -26,6 +45,8 @@
     </nav>
 
 </header>
+
+<div class="sidebar"></div>
 
 <div class="pagina">
 
@@ -83,33 +104,7 @@
 
 </div>
 
-<script>
-
-const header = document.querySelector("header");
-
-let ultimaPosicao = window.scrollY;
-
-window.addEventListener("scroll", function() {
-
-    const posicaoAtual = window.scrollY;
-
-    if (posicaoAtual > ultimaPosicao) {
-
-        // Está descendo
-        header.style.transform = "translateY(-100%)";
-
-    } else if (posicaoAtual < ultimaPosicao) {
-
-        // Está subindo
-        header.style.transform = "translateY(0)";
-
-    }
-
-    ultimaPosicao = posicaoAtual;
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
